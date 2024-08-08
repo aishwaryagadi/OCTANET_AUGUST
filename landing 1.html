@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            color: Red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px 20px;
+        }
+        nav img {
+            height: 60px;
+        }
+        nav a {
+            color: yellow;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        header {
+            position: relative;
+            height: 500px;
+            text-align: center;
+            color: black;
+        }
+        header::before {
+            content: "";
+            background: url('paradise.jpeg') no-repeat center center/cover;
+            filter: blur(3px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        header h1 {
+            margin-top: 0;
+            padding-top: 100px;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section-image {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .about, .contact {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2, .contact h2 {
+            margin-top: 0;
+        }
+        .subsection {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .subsection h3 {
+            margin-top: 0;
+            margin-right: 20px;
+        }
+        .subsection img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="logo.jpg" alt="Food paradise Logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to Food paradise</h1>
+        <p>Your ultimate destination for food lovers</p>
+    </header>
+
+    <section id="recipes">
+        <h2>Our Recipes</h2>
+        <p>Explore our extensive collection of delicious recipes across various cuisines.</p>
+        <img src="recipes.jpeg" alt="Recipes" class="section-image">
+        <div class="subsection">
+            <h3>Appetizers</h3>
+            <p>Start your meal with our delightful appetizers.</p>
+            <img src="image5.jpg" alt="Appetizers" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Main Courses</h3>
+            <p>Enjoy our mouth-watering main courses.</p>
+            <img src="main.jpg" alt="Main Courses" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Desserts</h3>
+            <p>Indulge in our sweet and delicious desserts.</p>
+            <img src="dessert.jpg" alt="Desserts" class="section-image">
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Stay updated with our latest articles on food and cooking.</p>
+        <img src="blog.jpg" alt="Blog" class="section-image">
+        <div class="subsection">
+            <h3>Recipe Ideas</h3>
+            <p>Find your next favorite dish with our recipe ideas.</p>
+            <img src="idea.jpg" alt="Recipe Ideas" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Chef Interviews</h3>
+            <p>Get insights from your favorite chefs.</p>
+            <img src="chef.jpeg" alt="Chef Interviews" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Cooking Tips</h3>
+            <p>Improve your cooking skills with our tips and advice.</p>
+            <img src="tips.jpeg" alt="Cooking Tips" class="section-image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are a community of food enthusiasts dedicated to sharing our love for cooking and eating.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with your questions or feedback.</p>
+        <p>Email: info@foodparadise.com</p>
+        <p>Phone: 9876543210</p>
+    </section>
+
+</body>
+</html>
